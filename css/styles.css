@@ -1,25 +1,32 @@
 /*Fonts*/
-
+/*
 font-family: 'Pacifico', cursive;
 font-family: 'Amatic SC', cursive;
-font-family: 'Cardo', serif;
-
-/*WTF IS WRONG WITH .text-header???*/
+font-family: 'Cardo', serif;*/
 
 h1 {
-	font-size: 2em;
+	font-size: 1.2em;
 	font-family: 'Pacifico', Helvetica, sans-serif;
+	margin-top: -3.3em;
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1em;
 	font-family: 'Amatic SC', Helvetica, sans-serif;
 	font-weight: 400;
+	margin-top: -1em;
 }
 
 p {
-	font-size: 1em;
+	font-size: .2em;
 	font-family: 'Cardo', Times, serif;
+}
+
+.split {
+	display: block;
+	float: left;
+	border: solid 2px black;
+	margin: 0 2em;
 }
 
 
