@@ -4,17 +4,25 @@ font-family: 'Pacifico', cursive;
 font-family: 'Amatic SC', cursive;
 font-family: 'Cardo', serif;*/
 
+/*_____________________________________________
+Section Spacing
+_____________________________________________*/
+
 h1 {
 	font-size: 1.2em;
 	font-family: 'Pacifico', Helvetica, sans-serif;
-	margin-top: -3.3em;
+	display: block;
+	text-align: center;
+	margin: 0;
 }
 
 h2 {
 	font-size: 1em;
 	font-family: 'Amatic SC', Helvetica, sans-serif;
 	font-weight: 400;
-	margin-top: -1em;
+	display: block;
+	text-align: center;
+	margin: 0;
 }
 
 p {
@@ -22,16 +30,56 @@ p {
 	font-family: 'Cardo', Times, serif;
 }
 
-.split {
-	display: block;
-	float: left;
-	border: solid 2px black;
-	margin: 0 2em;
+header {
+	width: 100%;
+	height: 40%;
 }
 
 
+.content1 {
+	width: 50%;
+	height: 60%;
+	float: left;
+}
+
+.content2 {
+	height: 60%;
+	overflow: hidden;
+}
 
 .section {
 	font-size: 6em;
 	text-align: center;
     }
+
+/*_____________________________________________
+Bio CSS
+_____________________________________________*/
+
+
+.resume {
+	display: inline;
+	float: left;
+}
+
+.resume img {
+	box-shadow: 10px 10px 5px #888888;
+}
+
+
+#jump-to a {
+	font-family: 'Cardo', Helvetica, sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	font-size: .2em;
+	text-align: right;
+	border: solid # 1px;
+
+}
+
+#jump-to li {
+	list-style-type: none;
+	text-align: left;
+}
+
+
