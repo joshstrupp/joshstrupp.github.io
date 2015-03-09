@@ -38,8 +38,8 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        resize : false,
-        sectionsColor: ['#fff', '#FCFFF5', '#D1DBBD', '#91AA9D', '#3E606F', '#193441', '#11232B', '#04080A'],
+        resize : false, 
+        sectionsColor: ['#fff', '#3E606F', '#FCFFF5', '#D1DBBD', '#91AA9D', '#193441', '#11232B', '#04080A'],
         paddingTop: '0',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
@@ -57,4 +57,11 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction){}
     });
+});
+
+//Hover over img in #section2 (films), darken img background and add title and description text
+$(document).ready(function(){
+	$('img').hover(function(){
+			$('img').addClass('.film-description');
+			});			
 });

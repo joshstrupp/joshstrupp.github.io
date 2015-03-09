@@ -30,6 +30,8 @@ h2 {
 p {
 	font-size: .2em;
 	font-family: 'Cardo', Times, serif;
+	align-content:center;
+	margin: 0 5em;
 }
 
 header {
@@ -79,6 +81,13 @@ _____________________________________________*/
 .resume img {
 	height: auto;
 	width: 1em;	
+	border: solid #000000 .05em;
+	padding: .2em;
+	border-radius: .2em;
+}
+
+.resume img:hover {
+	background: rgba(169,233,254,0.7);
 }
 
 /*#jump-to a {
@@ -98,8 +107,12 @@ _____________________________________________*/
 
 
 /*_____________________________________________
-Bio CSS
+Rival CSS
 _____________________________________________*/
+
+#section1 {
+	color: #FFFFFF;	
+}
 
 /*.background-image {
 	position: fixed;
@@ -116,6 +129,28 @@ _____________________________________________*/
   filter: blur(5px);
 }
 */
+
+/*_____________________________________________
+FIlms CSS
+_____________________________________________*/
+
+#section2 a {
+	text-decoration: none;
+	
+}
+
+#section2 img {
+	height: 8em;
+	width: auto;	
+	border: #000 solid .2em;
+	padding: .1em;
+	margin: 1em .3em 0 .3em;	
+}
+
+.film-description {
+	color: #fff;
+	background-color: rgba(0,0,0,.5);	
+}
 
 
 
