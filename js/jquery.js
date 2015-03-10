@@ -59,9 +59,19 @@ $(document).ready(function() {
     });
 });
 
-//Hover over img in #section2 (films), darken img background and add title and description text
-$(document).ready(function(){
-	$('img').hover(function(){
-			$('img').addClass('.film-description');
-			});			
+$(function () {
+  var w = $(window);
+  w.scroll(function () {
+    if (w.scrollTop() !== 0) {
+      $(".d").removeClass("visible");
+      return;
+    }
+    
+    $(".d").addClass("visible");
+  });
+  
+  $(".d").addClass("visible");
+  
 });
+
+//Hover over img in #section2 (films), darken img background and add title and description text

@@ -16,6 +16,7 @@ h1 {
 	margin-right: -30px;
 	margin-left: -30px;
 	margin-bottom: -30px;
+	margin-top: -30px;
 }
 
 h2 {
@@ -31,7 +32,7 @@ p {
 	font-size: .2em;
 	font-family: 'Cardo', Times, serif;
 	align-content:center;
-	margin: 0 5em;
+	margin: 2em 5em 0 5em;
 }
 
 header {
@@ -83,6 +84,7 @@ _____________________________________________*/
 	width: 1em;	
 	border: solid #000000 .05em;
 	padding: .2em;
+	margin-top: -2em;
 	border-radius: .2em;
 }
 
@@ -90,20 +92,87 @@ _____________________________________________*/
 	background: rgba(169,233,254,0.7);
 }
 
-/*#jump-to a {
-	font-family: 'Cardo', Helvetica, sans-serif;
-	font-weight: 400;
-	text-decoration: none;
-	font-size: .2em;
-	text-align: right;
-	border: solid # 1px;
+.d.visible {
+  bottom: 20px;
+}
+
+.d {
+  border: 1px solid #000;
+  border-radius: 50%;
+  color: #000;
+  text-align: center;
+  
+  bottom: -120px;
+  display: block;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  
+  height: 100px;
+  line-height: 100px;
+  width: 100px;
+  
+  -webkit-animation: a 4s infinite;
+  -moz-animation: a 4s infinite; 
+  -o-animation: a 4s infinite; 
+  animation: a 4s infinite;
+  
+  -webkit-transition: bottom 1s ease;
+  -moz-transition: bottom 1s ease;
+  -o-transition: bottom 1s ease;
+  transition: bottom 1s ease;  
+}
+
+.a {
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 2px;
+  color: #000;
+  display: inline-block;
+  font-size: 0;
+  height: 50px;
+  line-height: 0;
+  margin-top: -25px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+  
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(45deg);
+}
+
+@-webkit-keyframes a {
+  0%   { opacity: .3; }
+  50%   { opacity: 1; }
+  100% { opacity: .3; }
+}
+
+@-moz-keyframes a {
+  0%   { opacity: .3; }
+  50%   { opacity: 1; }
+  100% { opacity: .3; }
+}
+
+@-o-keyframes a {
+  0%   { opacity: .3; }
+  50%   { opacity: 1; }
+  100% { opacity: .3; }
+}
+
+@keyframes a {
+  /*0%   { opacity: .3; }
+  50%   { opacity: 1; }
+  100% { opacity: .3; }*/
+  
+  0%   { border-color: #000; }
+  50%   { border-color: #555: }
+  100% { border-color: #000; }
 
 }
 
-#jump-to li {
-	list-style-type: none;
-	text-align: left;
-}*/
 
 
 /*_____________________________________________
@@ -136,7 +205,10 @@ _____________________________________________*/
 
 #section2 a {
 	text-decoration: none;
-	
+}
+
+.films {
+	margin-bottom: -.8em;	
 }
 
 #section2 img {
