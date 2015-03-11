@@ -1,7 +1,7 @@
 $(document).ready(function() {
         $(".fancybox").fancybox();
     });
-
+	
 $(document).ready(function() {
     $('#fullpage').fullpage({
         //Navigation
@@ -73,5 +73,9 @@ $(function () {
   $(".d").addClass("visible");
   
 });
+
+
+
+
 
 //Hover over img in #section2 (films), darken img background and add title and description text

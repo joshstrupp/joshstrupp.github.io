@@ -32,7 +32,7 @@ p {
 	font-size: .2em;
 	font-family: 'Cardo', Times, serif;
 	align-content:center;
-	margin: 2em 5em 0 5em;
+	margin: .5em 5em 0 3em;
 }
 
 header {
@@ -42,18 +42,6 @@ header {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-}
-
-
-.content1 {
-	width: 50%;
-	height: 60%;
-	float: left;
-}
-
-.content2 {
-	height: 60%;
-	overflow: hidden;
 }
 
 .section {
@@ -212,8 +200,8 @@ _____________________________________________*/
 }
 
 #section2 img {
-	height: 8em;
-	width: auto;	
+	height: auto;
+	width: 20%;	
 	border: #000 solid .2em;
 	padding: .1em;
 	margin: 1em .3em 0 .3em;	
@@ -222,7 +210,18 @@ _____________________________________________*/
 .film-description {
 	color: #fff;
 	background-color: rgba(0,0,0,.5);	
+	
 }
+
+.photos {
+	margin-bottom: -1.5em;
+}
+#section4 img {
+	height: auto;
+	width: 14%;
+	border: .04em solid #000;
+}
+
 
 
 
