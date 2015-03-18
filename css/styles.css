@@ -309,9 +309,13 @@ _____________________________________________*/
 
 
 #section4 a:link {
-	color: #8EF8FF;
+	color: #0074BC;
 	text-decoration: none;
 	font-weight:bold;	
+	}
+
+#section4 a:hover {
+	color: #930000;
 	}
 
 /*_____________________________________________
