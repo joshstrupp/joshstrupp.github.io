@@ -29,11 +29,12 @@ h2 {
 }
 
 p {
-	font-size: .2em;
+	font-size: .25em;
 	font-family: 'Cardo', Times, serif;
 	align-content:center;
-	margin: .5em 5em 0 3em;
+	margin: .5em 10em 0 10em;
 }
+
 
 header {
 	width: 100%;
@@ -52,6 +53,8 @@ header {
 /*_____________________________________________
 Bio CSS
 _____________________________________________*/
+
+
 
 .resume {
 	width: 100%;
@@ -168,31 +171,76 @@ Rival CSS
 _____________________________________________*/
 
 #section1 {
-	color: #FFFFFF;	
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../images/3d_lawn.jpg');
+	background-size: 100% 100%;
 }
 
-/*.background-image {
-	position: fixed;
-  z-index: 1;
-
-  display: block;
-  background-image: url(url("../images/rival-img.jpg"));
-  background-size: cover;
-
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+#section1 {
+	color: #FFFFFF;
 }
-*/
+
+#section1 a:link {
+	color: #8EF8FF;
+	text-decoration: none;
+	font-weight:bold;	
+	}
+
+#section1 a:visited {
+	color: #FFFFFF;
+	}
+
+#section1 a:hover {
+	color: #8EF8FF;
+	}
+
+.vid-container {
+	font-size: .25em;
+	font-family: 'Amatic SC', Times, serif;
+	align-content:center;
+	margin: .5em 4em 0 4em;
+}
+
+.vid-container span {
+	font-size: .25em;
+	font-family: 'Amatic SC', Times, serif;
+	text-align:center;
+	}
 
 /*_____________________________________________
 FIlms CSS
 _____________________________________________*/
 
+#section2 {
+	color: #EFEFEF;
+	}
+
 #section2 a {
 	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	width: 20%;
+	border: #EFEFEF solid .15em;
+	margin: 1em .3em 0 .3em;	
+}
+
+#section2 a .video-title {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+}
+
+#section2 a:hover .video-title {
+	opacity: 1;
 }
 
 .films {
@@ -200,18 +248,27 @@ _____________________________________________*/
 }
 
 #section2 img {
-	height: auto;
-	width: 20%;	
-	border: #000 solid .2em;
-	padding: .1em;
-	margin: 1em .3em 0 .3em;	
+	height: 140%;
+	width: 100%;
+	margin-bottom: -0.35em;
+
 }
+
+#section2 .films p {
+	margin-left: -2em;
+	margin-right: -2em;
+	}
 
 .film-description {
 	color: #fff;
 	background-color: rgba(0,0,0,.5);	
-	
 }
+.films span {
+	color: #fff;
+	font-family:'Pacifico', san-serif;
+	font-size: 1.3em;
+	}
+	
 
 /*_____________________________________________
 Photos CSS
@@ -220,12 +277,42 @@ _____________________________________________*/
 .photos {
 	margin-bottom: -1.5em;
 }
-#section4 img {
+
+
+#section3 {
+	color: white;
+	}
+
+#section3 img {
 	height: auto;
 	width: 14%;
-	border: .04em solid #000;
+	border: .04em solid #fff;
+	opacity: .3;
 }
 
+#section3 img:hover {
+	height: auto;
+	width: 14%;
+	border: .04em solid #fff;
+	opacity: 1;
+	}
+
+#section3 {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, .2),
+      rgba(0, 0, 0, .2)
+    ),
+    url('../images/camera.jpg');
+	background-size: 100% 100%;
+}
+
+
+#section4 a:link {
+	color: #8EF8FF;
+	text-decoration: none;
+	font-weight:bold;	
+	}
 
 /*_____________________________________________
 Media Queries CSS
@@ -251,6 +338,11 @@ _____________________________________________*/
 	h1 {
 		margin-top: 1em;
 		font-size: .9em;
+		}
+	}
+@media (max-width: 800px) {
+	fp-controlArrow fp-prev {
+		display: none;
 		}
 	}
 
