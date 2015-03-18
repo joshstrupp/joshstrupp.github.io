@@ -177,7 +177,8 @@ _____________________________________________*/
       rgba(0, 0, 0, 0.5)
     ),
     url('../images/3d_lawn.jpg');
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position:center;
 }
 
 #section1 {
@@ -304,7 +305,7 @@ _____________________________________________*/
       rgba(0, 0, 0, .2)
     ),
     url('../images/camera.JPG');
-	background-size: 100% 100%;
+	background-size: cover;
 }
 
 
