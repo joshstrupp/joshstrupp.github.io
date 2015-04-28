@@ -220,6 +220,14 @@ _____________________________________________*/
 	color: #EFEFEF;
 	}
 
+#section2 header a {
+	border: none;
+	margin: none;
+	width: none;
+	text-decoration: none;
+	display: inline;
+}
+
 #section2 a {
 	text-decoration: none;
 	position: relative;
@@ -326,7 +334,7 @@ _____________________________________________*/
 
 
 
-@media (max-width: 950px) and (min-width: 550px) {
+@media (max-width: 950px) and (min-width: 700px) {
 	a.fancybox {
 		padding: 0;
 		margin-right: auto;
@@ -336,14 +344,20 @@ _____________________________________________*/
 		}
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
 	.resume img {
 		display: none;
 		}
-	h1 {
-		margin-top: 1em;
-		font-size: .9em;
+	p {
+		display: none;
 		}
+	h1 {
+		font-size: .8em;
+		margin-bottom: .2em;
+	}	
+	h2 {
+		font-size: .5em;
+	}
 	}
 @media (max-width: 800px) {
 	fp-controlArrow fp-prev {
