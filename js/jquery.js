@@ -39,7 +39,7 @@ $(document).ready(function() {
         controlArrows: true,
         verticalCentered: true,
         resize : false, 
-        sectionsColor: ['#fff', '#91AA9D','#3E606F','#04080A','#D1DBBD', '#11232B','#193441','#FCFFF5'],
+        sectionsColor: ['#fff', '#91AA9D','#262E20','#04080A','#f9bc81', '#11232B','#193441','#FCFFF5'],
         paddingTop: '0',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
