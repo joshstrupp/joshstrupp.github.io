@@ -8,377 +8,81 @@ font-family: 'Cardo', serif;*/
 Section Spacing
 _____________________________________________*/
 
-h1 {
-	font-size: 1.2em;
-	font-family: 'Pacifico', Helvetica, sans-serif;
-	display: block;
-	text-align: center;
-	margin-right: -30px;
-	margin-left: -30px;
-	margin-bottom: -30px;
-	margin-top: -30px;
+ul {
+  list-style-type: none;
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+  justify-items: center;
+  margin: auto;
+  align-items: center;
 }
 
-h2 {
-	font-size: 1em;
-	font-family: 'Amatic SC', Helvetica, sans-serif;
-	font-weight: 400;
-	display: block;
-	text-align: center;
-	margin: 0;
+@media (min-width: 500px) {
+  ul {
+    grid-auto-flow: column;
+  }
 }
 
-p {
-	font-size: .25em;
-	font-family: 'Cardo', Times, serif;
-	align-content:center;
-	margin: .5em 10em 0 10em;
+a {
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
 }
 
 
-header {
-	width: 100%;
-	height: 40%;
-	margin-top: -1.3em;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-}
-
-.section {
-	font-size: 4.5em;
-	text-align: center;
-    }
-
-/*_____________________________________________
-Bio CSS
-_____________________________________________*/
-
-
-
-.resume {
-	width: 100%;
-	height: 60%;
-	margin-top: 1.5em;
-}
-
-.resume a {
-	padding-right: 1.3em;	
-}
-
-.resume a:first-child {
-	padding-left: 1.3em;
-	}
-	
-.resume img {
-	height: auto;
-	width: 1em;	
-	border: solid #000000 .05em;
-	padding: .2em;
-	margin-top: -2em;
-	border-radius: .2em;
-}
-
-.resume img:hover {
-	background: rgba(169,233,254,0.7);
-}
-
-.d.visible {
-  bottom: 15px;
-}
-
-.d {
-  border: 1px solid #000;
-  border-radius: 50%;
-  color: #000;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #383737;
+  color: #727272;
   text-align: center;
-  
-  bottom: -120px;
-  display: block;
-  left: 50%;
-  margin-left: -40px;
-  position: absolute;
-  
-  height: 75px;
-  line-height: 75px;
-  width: 75px;
-  
-  -webkit-animation: a 4s infinite;
-  -moz-animation: a 4s infinite; 
-  -o-animation: a 4s infinite; 
-  animation: a 4s infinite;
-  
-  -webkit-transition: bottom 1s ease;
-  -moz-transition: bottom 1s ease;
-  -o-transition: bottom 1s ease;
-  transition: bottom 1s ease;  
-}
-
-.a {
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
-  border-radius: 2px;
-  color: #000;
-  display: inline-block;
-  font-size: 0;
-  height: 30px;
-  line-height: 0;
-  margin-top: -25px;
-  text-align: center;
-  vertical-align: middle;
-  width: 30px;
-  
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(45deg);
-}
-
-@-webkit-keyframes a {
-  0%   { opacity: .3; }
-  50%   { opacity: 1; }
-  100% { opacity: .3; }
-}
-
-@-moz-keyframes a {
-  0%   { opacity: .3; }
-  50%   { opacity: 1; }
-  100% { opacity: .3; }
-}
-
-@-o-keyframes a {
-  0%   { opacity: .3; }
-  50%   { opacity: 1; }
-  100% { opacity: .3; }
-}
-
-@keyframes a {
-  /*0%   { opacity: .3; }
-  50%   { opacity: 1; }
-  100% { opacity: .3; }*/
-  
-  0%   { border-color: #000; }
-  50%   { border-color: #555: }
-  100% { border-color: #000; }
+  font-size: .65em;
 
 }
 
-
-
-/*_____________________________________________
-Rival CSS
-_____________________________________________*/
-
-#section1 {
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('../images/3d_lawn.jpg');
-	background-size: cover;
-	background-position:center;
+a:hover {
+  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
 }
 
-#section1 {
-	color: #FFFFFF;
+li:last-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
-#section1 a:link {
-	color: #8EF8FF;
-	text-decoration: none;
-	font-weight:bold;	
-	}
-
-#section1 a:visited {
-	color: #FFFFFF;
-	}
-
-#section1 a:hover {
-	color: #8EF8FF;
-	}
-
-.vid-container {
-	font-size: .25em;
-	font-family: 'Amatic SC', Times, serif;
-	align-content:center;
-	margin: .5em 4em 0 4em;
+li:hover ~ li p {
+  animation: wave-animation 0.3s infinite;
 }
 
-.vid-container span {
-	font-size: .25em;
-	font-family: 'Amatic SC', Times, serif;
-	text-align:center;
-	}
+/* below is just for demo styling */
 
-/*_____________________________________________
-FIlms CSS
-_____________________________________________*/
-
-#section2 {
-	color: #EFEFEF;
-	}
-
-#section2 header a {
-	border: none;
-	margin: none;
-	width: none;
-	text-decoration: none;
-	display: inline;
+div {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #202020;
+  line-height: 1.3;
+  font-family: Menlo, monospace;
 }
 
-#section2 a {
-	text-decoration: none;
-	position: relative;
-	display: inline-block;
-	width: 20%;
-	border: #EFEFEF solid .15em;
-	margin: 1em .3em 0 .3em;	
+@keyframes wave-animation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
 }
 
-#section2 a .video-title {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.5);
-	opacity: 0;
+.wave-style {
+	list-style-type: none;
+	font-size: 150%;
+	margin: 1em;
 }
-
-#section2 a:hover .video-title {
-	opacity: 1;
-}
-
-.films {
-	margin-bottom: -.8em;	
-}
-
-#section2 img {
-	height: 140%;
-	width: 100%;
-	margin-bottom: -0.35em;
-
-}
-
-#section2 .films p {
-	margin-left: -2em;
-	margin-right: -2em;
-	}
-
-.film-description {
-	color: #fff;
-	background-color: rgba(0,0,0,.5);	
-}
-.films span {
-	color: #fff;
-	font-family:'Pacifico', san-serif;
-	font-size: 1.3em;
-	}
-	
-
-/*_____________________________________________
-Photos CSS
-_____________________________________________*/
-
-.photos {
-	margin-bottom: -1.5em;
-}
-
-
-#section3 {
-	color: white;
-	}
-
-#section3 img {
-	height: auto;
-	width: 14%;
-	border: .04em solid #fff;
-	opacity: .3;
-}
-
-#section3 img:hover {
-	height: auto;
-	width: 14%;
-	border: .04em solid #fff;
-	opacity: 1;
-	}
-
-#section3 {
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, .2),
-      rgba(0, 0, 0, .2)
-    ),
-    url('../images/camera.JPG');
-	background-size: cover;
-}
-
-
-#section4 a:link {
-	color: #0074BC;
-	text-decoration: none;
-	font-weight:bold;	
-	}
-
-#section4 a:hover {
-	color: #930000;
-	}
-
-/*_____________________________________________
-Media Queries CSS
-_____________________________________________*/
-
-
-
-
-@media (max-width: 950px) and (min-width: 700px) {
-	a.fancybox {
-		padding: 0;
-		margin-right: auto;
-		}
-	a.fancybox:first-child {
-		padding-left: 0;
-		}
-}
-
-@media (max-width: 700px) {
-	.resume img {
-		display: none;
-		}
-	p {
-		display: none;
-		}
-	h1 {
-		font-size: .8em;
-		margin-bottom: .2em;
-	}	
-	h2 {
-		font-size: .5em;
-	}
-	}
-@media (max-width: 800px) {
-	fp-controlArrow fp-prev {
-		display: none;
-		}
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
