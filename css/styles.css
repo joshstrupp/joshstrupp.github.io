@@ -18,16 +18,49 @@ ul {
   align-items: center;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 770px) {
   ul {
     grid-auto-flow: column;
+    grid-gap: 4em;
+
   }
+
+  .wave-style {
+	list-style-type: none;
+	font-size: 1.5em;
 }
+
+/*@media (max-width: 500px) {
+  ul {
+    background-color: green;
+  }
+}*/
+
+
+
+  div {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #202020;
+  line-height: 1.3;
+  font-family: Menlo, monospace;
+	}
+}
+
 
 a {
   color: white;
   text-decoration: none;
   box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+
+a:visited {
+	color: white;
+}
+
+a:link {
+	color: white;
 }
 
 
@@ -45,6 +78,10 @@ footer {
 
 a:hover {
   box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
+li {
+  margin-left: -2.5em;
 }
 
 li:last-child {
@@ -82,7 +119,8 @@ div {
 
 .wave-style {
 	list-style-type: none;
-	font-size: 150%;
-	margin: 1em;
+	font-size: 1.5em;
+	text-align: center;
+	margin-left: -1.8em;
 }
 
