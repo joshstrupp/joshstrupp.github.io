@@ -11,7 +11,7 @@
   var width = window.innerWidth;
   var height = window.innerHeight;
   var cursor = {x: width/2, y: width/2};
-  var particles = [];
+  var particles = []; 
   
   function init() {
     bindEvents();
